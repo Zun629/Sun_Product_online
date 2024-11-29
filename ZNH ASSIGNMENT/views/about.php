@@ -18,6 +18,7 @@ if (session_status() === PHP_SESSION_NONE) {
 <?php include 'header.php'; ?>
 
 <main class="container my-5 flex-grow-1">
+  <div id="searchResults" class="mb-4">  
     <!-- About Us Section -->
     <section class="row mb-4">
         <!-- Company Logo -->
@@ -70,6 +71,7 @@ if (session_status() === PHP_SESSION_NONE) {
             </p>
         </div>
     </section>
+  </div>
 </main>
 
 
