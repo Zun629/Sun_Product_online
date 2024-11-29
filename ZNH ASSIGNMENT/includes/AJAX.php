@@ -32,7 +32,7 @@ if (!empty($query)) {
             echo '<td>' . htmlspecialchars($results["POST_DATE"]) . '</td>';
             echo '<td>' . htmlspecialchars($results["DESCRIPTION"]) . '</td>';
             echo '<td>' . htmlspecialchars($results["SELLER_ID"]) . '</td>';
-            echo '<td>' . htmlspecialchars($results["CATEGORY_ID"]) . '</td>';
+            echo '<td>' . htmlspecialchars($results["CATEGORY"]) . '</td>';
             echo '<td>' . htmlspecialchars($results["STATUS"]) . '</td>';
             echo '<td><a href="/ZNH ASSIGNMENT/views/product.php?id=' . urlencode($results["ID"]) . '">' . "See More" . '</a></td>';
             echo '</tr>';
