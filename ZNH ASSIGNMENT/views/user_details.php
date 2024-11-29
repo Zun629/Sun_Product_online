@@ -27,8 +27,6 @@ $user_data = $dataAccess->retrieve_User_By_Name($_SESSION["username"]);
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="d-flex flex-column min-vh-100">
-    <!-- Header Section -->
-    <?php include 'header.php'; ?>
 
     <div class="container my-5 flex-grow-1">
         <h1>User Details</h1>
@@ -80,6 +78,7 @@ $user_data = $dataAccess->retrieve_User_By_Name($_SESSION["username"]);
             Back to Home
         </button>
         </form>
+        
 
     </div>
 
