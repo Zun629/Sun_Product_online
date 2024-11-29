@@ -49,7 +49,7 @@ if (isset($_GET['id'])) {
             <p><strong>Posted Date:</strong> <?php echo $product_details['SELLER_ID']?></p>
             <p><strong>Price:</strong> <?php echo $product_details['PRICE']?></p>
             <p><strong>Status:</strong> <?php if($product_details['STATUS']!== 0 ){echo "OUT OF STOCK";}else{echo "INSTOCK";}?></p>
-            <p><strong>Category:</strong> <?php echo $product_details['CATEGORY_ID']?></p>
+            <p><strong>Category:</strong> <?php echo $product_details['CATEGORY']?></p>
             
             <h5>Product Description</h5>
             <p><?php echo $product_details['DESCRIPTION']?></p>            
