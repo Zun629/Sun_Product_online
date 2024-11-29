@@ -11,11 +11,13 @@ if (session_status() === PHP_SESSION_NONE) {
     <title>Contact Us</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
 
 <!-- Header Section -->
 <?php include 'header.php'; ?>
 
+<main class="container my-5 flex-grow-1">
+<div id="searchResults" class="mb-4">
 <!-- Contact Us Section -->
 <div class="container mt-5">
     <h2 class="text-center mb-4">Need to contact us about something?</h2>
@@ -59,16 +61,16 @@ if (session_status() === PHP_SESSION_NONE) {
     <hr>
 
     <!-- Company Picture Slideshow -->
-    <div id="companySlideshow" class="carousel slide" data-ride="carousel">
+    <!--<div id="companySlideshow" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://placehold.co/100x10" class="d-block w-100" alt="Company Image 1">
+                <img src="../includes/files/profile/Slide.png" class="d-block w-100" alt="Company Image 1">
             </div>
             <div class="carousel-item">
-                <img src="https://placehold.co/100x10" class="d-block w-100" alt="Company Image 2">
+                <img src="../includes/files/profile/Slide.png" class="d-block w-100" alt="Company Image 2">
             </div>
             <div class="carousel-item">
-                <img src="https://placehold.co/100x10" class="d-block w-100" alt="Company Image 3">
+                <img src="../includes/files/profile/Slide.png" class="d-block w-100" alt="Company Image 3">
             </div>
         </div>
         <a class="carousel-control-prev" href="#companySlideshow" role="button" data-slide="prev">
@@ -79,17 +81,20 @@ if (session_status() === PHP_SESSION_NONE) {
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
-    </div>
+    </div>-->
 
     <div class="mt-4 text-center">
         <p>Thank you for contacting us! We'll get back to you as soon as possible.</p>
     </div>
 </div>
-
+</div>
+</main>
 <!-- Footer Section -->
 <?php include 'footer.php'; ?>
 
 <!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
