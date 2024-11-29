@@ -41,6 +41,7 @@ if (isset($_GET['id'])) {
 <?php include 'header.php'; ?>
 
 <div class="container my-5 flex-grow-1">
+<div id="searchResults" class="mb-4">
     <h2 class="text-center mb-4">Shopping Cart</h2>
 
     <?php if (isset($_GET['status'])) {
@@ -131,11 +132,14 @@ if (isset($_GET['id'])) {
         </div>
     </div>
 </div>
+</div>
 
 <!-- Footer Section -->
 <?php include 'footer.php'; ?>
 
 <!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script>
