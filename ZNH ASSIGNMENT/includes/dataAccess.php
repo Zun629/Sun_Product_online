@@ -172,7 +172,7 @@ class DataAccess extends Database{
     public function create_Product($product_name, $product_price, $product_category, $product_status, $product_description, $seller_id, $destination) {
         $id = $this->gen_uuid();
         
-        $prepared_statement = $this->connect()->prepare('INSERT INTO tb_products (ID, PRODUCT_NAME, PRICE, POST_DATE, DESCRIPTION, SELLER_ID, CATEGORY_ID, STATUS, PRODUCT_IMAGE) VALUES (?,?,?,?,?,?,?,?,?);');
+        $prepared_statement = $this->connect()->prepare('INSERT INTO tb_products (ID, PRODUCT_NAME, PRICE, POST_DATE, DESCRIPTION, SELLER_ID, CATEGORY, STATUS, PRODUCT_IMAGE) VALUES (?,?,?,?,?,?,?,?,?);');
         if (!isset($prepared_statement)) {
             echo "Prepared statement is undefined.";
             exit;
@@ -219,7 +219,7 @@ class DataAccess extends Database{
 
     public function retrieve_Product_By_Category($category) {
         
-        $prepared_statement = $this->connect()->prepare('SELECT * FROM tb_products WHERE CATEGORY_ID = ?');
+        $prepared_statement = $this->connect()->prepare('SELECT * FROM tb_products WHERE CATEGORY = ?');
          // Execute the statement with the provided email
          if (!$prepared_statement->execute(array($category))) {
             // Clean up and handle error if execution fails
@@ -264,7 +264,7 @@ class DataAccess extends Database{
             SELECT * 
             FROM tb_products 
             WHERE PRODUCT_NAME LIKE :query 
-            OR CATEGORY_ID LIKE :categoryQuery 
+            OR CATEGORY LIKE :categoryQuery 
             LIMIT 10
         ');
     
