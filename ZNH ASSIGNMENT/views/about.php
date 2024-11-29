@@ -22,7 +22,7 @@ if (session_status() === PHP_SESSION_NONE) {
     <section class="row mb-4">
         <!-- Company Logo -->
         <div class="col-md-4 text-center">
-            <img src="https://placehold.co/400x400/000000/FFF?text=SUN Co." alt="Company Logo" class="img-fluid">
+            <img src="../views/sun-logo.png" alt="Company Logo" class="img-fluid">
         </div>
 
         <!-- About Us Description -->
