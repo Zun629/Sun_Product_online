@@ -24,7 +24,7 @@
 
                         <!-- Username/Email Input -->
                         <div class="form-group">
-                            <label for="email">Username/Email</label>
+                            <label for="email">Email</label>
                             <input type="email" class="form-control" id="email" name="email" placeholder="Enter username or email" required>
                         </div>
 
